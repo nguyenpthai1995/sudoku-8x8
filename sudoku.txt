@@ -1,0 +1,40 @@
+﻿Problem:   Easy modified sodoku
+Giới hạn thời gian: 1s
+Giới hạn bộ nhớ: 256 MB
+Bạn có biết trò chơi nổi tiếng sudoku? Mục tiêu của trò chơi là tạo ra một lưới 9 x 9 các chữ số sao cho mỗi cột, mỗi hàng và mỗi 9 lưới con 3 x 3 có chứa tất cả 
+các chữ số từ 1 đến 9. Vì trò chơi khá khó nên đã được biến tấu về lưới 8 x 8 và được chia thành 4 lưới con 4 x 4, được phép các số trùng tối đa 2 lần với các số 
+từ 1 đến 8. Bạn cần đặt các con số vào các ô trống ( kí hiệu là số 0).
+Đầu vào: số T là số test case, T * 8 dòng tiếp theo tương ứng với giá trị của T lưới ( 1 <= T <= 100)
+Đầu ra: Nếu lưới đầu vào có thể thỏa mãn luật chơi thì in ra YES và 8 dòng tiếp theo sẽ là lưới đó sau khi kết thúc. Ngược lại in ra NO
+Link submit: https://www.spoj.com/MTA_TT_2/problems/EZSUDOKU/
+Ví dụ:
+Đầu vào:
+2 
+1 2 3 4 5 6 7 0 
+5 6 2 1 3 4 0 7
+6 5 0 7 2 1 3 4 
+3 4 7 8 6 5 2 1 
+2 1 5 6 8 7 4 3 
+4 3 6 5 7 8 1 2 
+0 7 1 2 4 3 5 6 
+7 0 4 3 1 2 6 5 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1
+
+Đầu ra:
+Test case #1: YES 
+1 2 3 4 5 6 7 8 
+5 6 2 1 3 4 8 7 
+6 5 8 7 2 1 3 4 
+3 4 7 8 6 5 2 1 
+2 1 5 6 8 7 4 3 
+4 3 6 5 7 8 1 2 
+8 7 1 2 4 3 5 6 
+7 8 4 3 1 2 6 5 
+Test case #2: NO
